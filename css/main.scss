@@ -1,0 +1,86 @@
+---
+---
+
+$light-blue: rgb(128, 186, 232);
+
+@mixin futura {
+  font-family: Futura, 'Open Sans', sans-serif;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include futura;
+}
+
+header h1 {
+  float: left;
+  @media only screen and (max-width: 479px) {
+    float: none;
+    text-align: center;
+  }
+}
+
+nav {
+  float: right;
+  padding: 1rem 0;
+  @media only screen and (max-width: 479px) {
+    float: none;
+    ul {
+      padding: 0 0 0 0;
+      text-align: center;
+    }
+  }
+}
+
+nav ul li {
+  @include futura;
+  text-transform: uppercase;
+  display: inline;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  @media only screen and (max-width: 479px) {
+    display: inline-block;
+  }
+}
+
+nav a {
+  color: #666;
+  text-decoration: none;
+  &:hover {
+    color: $light-blue;
+  }
+}
+
+.center {
+  margin: auto;
+}
+
+.banner {
+  background-color: $light-blue;
+  color: white;
+  padding: 1.5rem 0;
+  p {
+    margin-left: 25%;
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+    }
+  }
+}
+
+button, .button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(28, 170, 228);
+  color: white;
+  padding: 1em 2em;
+  border-radius: 3px;
+}
