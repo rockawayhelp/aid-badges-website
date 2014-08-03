@@ -33,6 +33,9 @@ header h1 {
     float: none;
     text-align: center;
   }
+  @media only screen and (max-width: 479px) {
+    background: url(../img/logomark.png) 112px 0px no-repeat;
+  }
 }
 
 nav {
