@@ -98,6 +98,11 @@ nav a {
   min-height: 309px;
   padding: 1.5rem 0;
   position: relative;
+  @media only screen and (max-width: 850px) {
+      background: url(../img/badge.png) 58px 133px no-repeat,
+                  url(../img/aid-woman.png) -55px 0px no-repeat;
+      background-color: $light-blue;
+  }
   @media only screen and (max-width: 767px) {
       background: url(../img/badge.png) -30px 125% no-repeat;
       background-color: $light-blue;
