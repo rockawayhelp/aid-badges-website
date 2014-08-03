@@ -153,7 +153,7 @@ button.block, .button.block {
 }
 
 .audience {
-  margin: 2em 0;
+  margin: 2em 0 !important;
   .icon {
     float: left;
     width: 110px;
@@ -163,20 +163,14 @@ button.block, .button.block {
     @media only screen and (max-width: 959px) {
       font-size: 1.3em;
     }
+    @media only screen and (max-width: 497px) {
+      font-size: 1.4em;
+    }
   }
   p {
     clear: both;
-    min-height: 150px;
-  }
-  @media only screen and (max-width: 767px) {
-    margin-top: 2em !important;
-    p {
-      min-height: 0;
-    }
-  }
-  @media only screen and (max-width: 497px) {
-    h2 {
-      font-size: 1.4em;
+    @media only screen and (min-width: 768px) {
+      min-height: 150px;
     }
   }
 }
