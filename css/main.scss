@@ -114,6 +114,9 @@ nav a {
     @media only screen and (max-width: 767px) {
       margin-left: 0;
     }
+    @media only screen and (max-width: 497px) {
+      font-size: 1em;
+    }
   }
   strong {
     font-weight: 400;
@@ -144,4 +147,33 @@ button.block, .button.block {
   margin: auto;
   width: 50%;
   text-align: center;
+  @media only screen and (max-width: 497px) {
+    width: 100%;
+  }
+}
+
+.audience {
+  margin-bottom: 2em;
+  .icon {
+    float: left;
+    width: 110px;
+  }
+  h2 {
+    padding-bottom: 1.5em;
+  }
+  p {
+    clear: both;
+    min-height: 150px;
+  }
+  @media only screen and (max-width: 767px) {
+    margin-top: 2rem !important;
+    p {
+      min-height: 0;
+    }
+  }
+  @media only screen and (max-width: 497px) {
+    h2 {
+      font-size: 1.4em;
+    }
+  }
 }
