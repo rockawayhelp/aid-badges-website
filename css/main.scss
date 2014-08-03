@@ -5,6 +5,7 @@ $light-blue: rgb(128, 186, 232);
 
 @mixin futura {
   font-family: Futura, 'Open Sans', sans-serif;
+  font-weight: 300;
 }
 
 *, *:before, *:after {
@@ -20,8 +21,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header h1 {
+  background: url(../img/logomark.png) 0px 0px no-repeat;
   float: left;
-  @media only screen and (max-width: 479px) {
+  font-size: 36px;
+  padding: 25px 82px;
+  text-transform: uppercase;
+  @media only screen and (max-width: 767px) {
+    background: url(../img/logomark.png) 172px 0px no-repeat;
+    font-size: 2em;
+    padding: 125px 0 2rem 0;
     float: none;
     text-align: center;
   }
@@ -29,9 +37,10 @@ header h1 {
 
 nav {
   float: right;
-  padding: 1rem 0;
-  @media only screen and (max-width: 479px) {
+  padding: 3rem 0;
+  @media only screen and (max-width: 767px) {
     float: none;
+    padding: 0;
     ul {
       padding: 0 0 0 0;
       text-align: center;
@@ -65,9 +74,21 @@ nav a {
 }
 
 .banner {
+  background: url(../img/badge.png) 113px 133px no-repeat,
+              url(../img/aid-woman.png) 0px 0px no-repeat;
   background-color: $light-blue;
   color: white;
+  min-height: 309px;
   padding: 1.5rem 0;
+  position: relative;
+  @media only screen and (max-width: 767px) {
+      background: url(../img/badge.png) -30px 125% no-repeat;
+      background-color: $light-blue;
+      min-height: 0;
+  }
+  @media only screen and (max-width: 624px) {
+      background-image: none;
+  }
   p {
     margin-left: 25%;
     @media only screen and (max-width: 767px) {
